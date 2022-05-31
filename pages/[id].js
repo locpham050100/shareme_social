@@ -58,7 +58,7 @@ function PostPage({ trendingResults, followResults, providers }) {
         {<title>
           {post?.username} trên Shareme: {post?.text}
         </title>}
-        <link rel="icon" href="/logo_purple.png" />
+        <link rel="icon" href="/logo_favicon.ico" />
       </Head>
       <main className="bg-black min-h-screen flex max-w-[1500px] mx-auto">
         <Sidebar />
@@ -70,7 +70,7 @@ function PostPage({ trendingResults, followResults, providers }) {
             >
               <ArrowLeftIcon className="h-5 text-white" />
             </div>
-            Bài viết
+            Bài viết của {post?.username}
           </div>
 
           <Post id={id} post={post} postPage />
